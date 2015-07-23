@@ -4,5 +4,6 @@ extends layout
 block content
 	h1 Magellan's Voyage
 
-	h2 Magellan is now in: #{voyageStop.name}
-	a(href="#{voyageStop.nextLoc}") Next we're going to #{voyageStop.name}.
+	h2 Magellan is now in: #{location.name}
+
+	a.btn.btn-primary(href="#{location.nextSlug}") Next we'll travel to #{location.nextLoc}

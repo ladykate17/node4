@@ -7,10 +7,11 @@ var indexController = {
 
 	locationPage : function(req, res) {
 		var locSlug = req.params.slug;
-		var foundLoc = location.findLoc(locSlug); // this changes the name to be more URL friendly
 		
-
-		res.render('location', {location : foundLoc});
+		var foundLoc = location.findLoc(locSlug); 
+		
+		// counter++
+		res.render('location', {location : location.allLocations[0]});
 	}
 };
 
