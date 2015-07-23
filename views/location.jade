@@ -1,0 +1,8 @@
+//-location Page
+extends layout
+
+block content
+	h1 Magellan's Voyage
+
+	h2 Magellan is now in: #{voyageStop.name}
+	a(href="#{voyageStop.nextLoc}") Next we're going to #{voyageStop.name}.

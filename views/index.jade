@@ -1,4 +1,7 @@
 extends layout
 
 block content
-	h1 Hello Boulder!
+	h1 Magellan's Voyage
+
+	h2 #{location.name}
+	a(href="#{location.nextLoc}") Next #{location.name}
