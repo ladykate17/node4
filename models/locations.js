@@ -1,6 +1,6 @@
 var allLocations = []
 
-var voyageStop = function(name, nextLoc){
+var voyageStop = function(name, nextLoc, id){
 	this.name     = name;
 	this.slug 	  = name.trim().toLowerCase().replace(/ /g, '-');
 	this.nextLoc  = nextLoc;

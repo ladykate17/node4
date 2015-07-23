@@ -7,11 +7,11 @@ var indexController = {
 
 	locationPage : function(req, res) {
 		var locSlug = req.params.slug;
-		
+
 		var foundLoc = location.findLoc(locSlug); 
 		
 		// counter++
-		res.render('location', {location : location.allLocations[0]});
+		res.render('location', {location : foundLoc});
 	}
 };
 
