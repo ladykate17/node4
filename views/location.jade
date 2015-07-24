@@ -6,4 +6,7 @@ block content
 
 	h2 Magellan is now in: #{location.name}
 
-	a.btn.btn-primary(href="#{location.nextSlug}") Next we'll travel to #{location.nextLoc}
+	.row
+		img.constrain-img(src="#{location.img}")
+	.row.right-align
+		a.btn.btn-primary(href="#{location.nextSlug}") Next we'll travel to #{location.nextLoc}

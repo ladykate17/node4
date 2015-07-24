@@ -1,0 +1,13 @@
+//-last Page
+extends layout
+
+block content
+	h1 Magellan's Voyage
+
+	h2 Magellan is now in: #{location.name}
+	p This was his last stop.
+
+	.row
+		img.constrain-img(src="http://technori.com/wp-content/uploads/Hudson_Mutiny-copy.jpg")
+	.row.right-align
+		a.btn.btn-primary(href="/") Start the Voyage Over!
